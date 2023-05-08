@@ -1,0 +1,87 @@
+*, *::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    color: #555;
+}
+
+.headers h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+h3{
+    font-size: 1.5rem;
+}
+.banner{
+    position: relative;
+    max-height: 300px;
+    overflow: hidden ;
+    text-align: center;
+    color: #fff;
+}
+.banner p{
+    color: #fff;
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#about img{
+    width: 100%;
+    
+}
+#about p{
+    color:#555;
+    line-height: 2rem;
+}
+
+.project img{
+    width: 100%;
+
+}
+.project h3, .project p{
+    margin-top: 0;
+    padding-top: 0;
+}
+.work a{
+    color: #000;
+}
+.work a:hover{
+    color: #e6106f;
+}
+.education h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.edu{
+    margin-bottom: 10px;
+}
+.language span{
+    color: #555;
+}
+
+
+/* mobile view */
+@media screen and (max-width:480px){
+    .banner{
+        max-height: 200px;
+    }
+    .centered{
+        width: 300px;
+    }
+    .centered h2{
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 0;
+        /* line-height: 3rem; */
+    }
+    .centered p{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
